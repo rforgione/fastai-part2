@@ -1,4 +1,3 @@
-# nbdev template
+# FastAI Part 2 [2020]
 
-Use this template to more easily create your nbdev project.
-
+This is where I'm keeping the code I write as I work through this course.
