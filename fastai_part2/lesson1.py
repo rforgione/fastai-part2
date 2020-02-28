@@ -14,7 +14,7 @@ import math
 from typing import *
 
 # Cell
-def get_data():
+def get_data(data_path):
   with gzip.open(data_path, mode="rb") as d:
     ((X_train, y_train), (X_valid, y_valid), _) = pickle.load(d, encoding='latin-1')
     X_train, y_train, X_valid, y_valid = map(torch.tensor, (X_train, y_train, X_valid, y_valid))
