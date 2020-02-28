@@ -4,6 +4,16 @@ __all__ = ['get_data', 'linear', 'relu', 'mse', 'd_mse', 'd_relu', 'd_linear', '
            'Module', 'Loss', 'Model', 'Lin', 'ReLU', 'MSE']
 
 # Cell
+from torch import tensor
+import torch
+import pickle
+from fastai.utils import *
+from fastai.datasets import *
+import gzip
+import math
+from typing import *
+
+# Cell
 def get_data():
   with gzip.open(data_path, mode="rb") as d:
     ((X_train, y_train), (X_valid, y_valid), _) = pickle.load(d, encoding='latin-1')

@@ -18,10 +18,10 @@ index = {"get_data": "00_lesson1.ipynb",
          "ReLU": "00_lesson1.ipynb",
          "MSE": "00_lesson1.ipynb"}
 
-modules = ["00_lesson1.py"]
+modules = ["lesson1.py"]
 
-doc_url = "https://fastai.github.io/fastai-part2/"
+doc_url = "https://rforgione.github.io/fastai_part2/"
 
-git_url = "https://github.com/fastai/fastai-part2/tree/master/"
+git_url = "https://github.com/rforgione/fastai_part2/tree/master/"
 
 def custom_doc_links(name): return None
