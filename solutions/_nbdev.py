@@ -16,9 +16,20 @@ index = {"get_data": "00_lesson1.ipynb",
          "Model": "00_lesson1.ipynb",
          "Lin": "00_lesson1.ipynb",
          "ReLU": "00_lesson1.ipynb",
-         "MSE": "00_lesson1.ipynb"}
+         "MSE": "00_lesson1.ipynb",
+         "MNIST_URL": "01_lesson2.ipynb",
+         "path": "01_lesson2.ipynb",
+         "basic_model": "01_lesson2.ipynb",
+         "Dataset": "01_lesson2.ipynb",
+         "SequentialSampler": "01_lesson2.ipynb",
+         "DataLoader": "01_lesson2.ipynb",
+         "Learn": "01_lesson2.ipynb",
+         "ModelMode": "01_lesson2.ipynb",
+         "DataBunch": "01_lesson2.ipynb",
+         "Runner": "01_lesson2.ipynb"}
 
-modules = ["lesson1.py"]
+modules = ["lesson1.py",
+           "lesson2.py"]
 
 doc_url = "https://rforgione.github.io/fastai_part2/"
 
