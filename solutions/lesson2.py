@@ -171,8 +171,6 @@ class Runner(object):
         self.valid_losses = []
         self.valid_counts = []
 
-        self.batches = 0
-
     def train(self):
         self.mode = ModelMode.TRAIN
 
@@ -213,6 +211,7 @@ class Runner(object):
     def fit(self, epochs=1):
         self.total_batches = math.ceil(len(self.learn.data.train_dl) / self.learn.data.train_dl.bs) * epochs
         self('on_train_start')
+        self.batches = 0
         self.epochs = 0
         for _ in range(epochs):
             self.train()
