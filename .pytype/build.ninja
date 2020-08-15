@@ -1,0 +1,18 @@
+rule infer
+  command = /home/paperspace/.pyenv/versions/miniconda3-3.7.0/envs/fastai/bin/python -m pytype.single --imports_info $imports --module-name $module -V 3.7 -o $out --no-report-errors --nofail --quick $in
+  description = infer $module
+rule check
+  command = /home/paperspace/.pyenv/versions/miniconda3-3.7.0/envs/fastai/bin/python -m pytype.single --imports_info $imports --module-name $module -V 3.7 -o $out --analyze-annotated --nofail --quick $in
+  description = check $module
+build /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson1.pyi: infer /home/paperspace/development/fastai-part2/solutions/lesson1.py
+  imports = /home/paperspace/development/fastai-part2/.pytype/imports/solutions.lesson1.imports
+  module = solutions.lesson1
+build /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson2.pyi: infer /home/paperspace/development/fastai-part2/solutions/lesson2.py | /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson1.pyi
+  imports = /home/paperspace/development/fastai-part2/.pytype/imports/solutions.lesson2.imports
+  module = solutions.lesson2
+build /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson3.pyi: infer /home/paperspace/development/fastai-part2/solutions/lesson3.py | /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson1.pyi /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson2.pyi
+  imports = /home/paperspace/development/fastai-part2/.pytype/imports/solutions.lesson3.imports
+  module = solutions.lesson3
+build /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson4.pyi: check /home/paperspace/development/fastai-part2/solutions/lesson4.py | /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson1.pyi /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson2.pyi /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson3.pyi
+  imports = /home/paperspace/development/fastai-part2/.pytype/imports/solutions.lesson4.imports
+  module = solutions.lesson4

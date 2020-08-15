@@ -48,15 +48,31 @@ index = {"get_data": "00_lesson1.ipynb",
          "current_gpu": "02_lesson3.ipynb",
          "AverageStatsCallback": "02_lesson3.ipynb",
          "accuracy": "02_lesson3.ipynb",
+         "Hook": "02_lesson3.ipynb",
+         "ListContainer": "02_lesson3.ipynb",
+         "Hooks": "02_lesson3.ipynb",
          "BatchNorm": "02_lesson3.ipynb",
          "init_cnn_": "02_lesson3.ipynb",
          "conv_layer": "02_lesson3.ipynb",
          "get_model": "02_lesson3.ipynb",
-         "get_runner": "02_lesson3.ipynb"}
+         "get_runner": "02_lesson3.ipynb",
+         "RunningBatchNorm": "02_lesson3.ipynb",
+         "A": "03_lesson4.ipynb",
+         "B": "03_lesson4.ipynb",
+         "Transform": "03_lesson4.ipynb",
+         "compose": "03_lesson4.ipynb",
+         "ItemList": "03_lesson4.ipynb",
+         "ResizeTransform": "03_lesson4.ipynb",
+         "ImageItemList": "03_lesson4.ipynb",
+         "split_by": "03_lesson4.ipynb",
+         "Matcher": "03_lesson4.ipynb",
+         "map_split": "03_lesson4.ipynb",
+         "SplitData": "03_lesson4.ipynb"}
 
 modules = ["lesson1.py",
            "lesson2.py",
-           "lesson3.py"]
+           "lesson3.py",
+           "solutions/lesson4.py"]
 
 doc_url = "https://rforgione.github.io/fastai_part2/"
 

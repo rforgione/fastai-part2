@@ -1,0 +1,9 @@
+torch/__init__ /home/paperspace/development/fastai-part2/.pytype/imports/default.pyi
+torch/nn/__init__ /home/paperspace/development/fastai-part2/.pytype/imports/default.pyi
+torch/optim/__init__ /home/paperspace/development/fastai-part2/.pytype/imports/default.pyi
+torch/tensor /home/paperspace/development/fastai-part2/.pytype/imports/default.pyi
+fastai/utils/__init__ /home/paperspace/development/fastai-part2/.pytype/imports/default.pyi
+fastai/datasets /home/paperspace/development/fastai-part2/.pytype/imports/default.pyi
+solutions/lesson1 /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson1.pyi
+solutions/lesson2 /home/paperspace/development/fastai-part2/.pytype/pyi/solutions/lesson2.pyi
+torch/functional /home/paperspace/development/fastai-part2/.pytype/imports/default.pyi
