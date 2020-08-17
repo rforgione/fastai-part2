@@ -13,6 +13,8 @@ from PIL import Image
 import requests
 import tempfile
 from io import BytesIO
+from pathlib import Path
+import mimetypes
 
 # Cell
 A = TypeVar('A')
