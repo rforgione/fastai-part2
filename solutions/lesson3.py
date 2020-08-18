@@ -92,6 +92,7 @@ class ListContainer:
         self.items = list(items)
 
     def __getitem__(self, idx):
+        cls = self.__class__
         if isinstance(idx, int):
             return self.items[idx]
 
@@ -100,10 +101,13 @@ class ListContainer:
                 return []
 
             if isinstance(idx[0], int):
-                return [self.items[i] for i in idx]
+                return cls([self.items[i] for i in idx])
 
             if isinstance(idx[0], bool) and len(idx) == len(self.items):
-                return [self.items[i] for i in range(len(self.items)) if idx[i]]
+                return cls([self.items[i] for i in range(len(self.items)) if idx[i]])
+
+        if isinstance(idx, slice):
+            return cls(self.items[idx])
 
         raise ValueError("idx must be an integer, list of integers, or list of bools.")
 

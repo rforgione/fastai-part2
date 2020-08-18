@@ -64,9 +64,9 @@ index = {"get_data": "00_lesson1.ipynb",
          "ItemList": "03_lesson4.ipynb",
          "ResizeTransform": "03_lesson4.ipynb",
          "ImageItemList": "03_lesson4.ipynb",
-         "split_by": "03_lesson4.ipynb",
+         "group_by": "03_lesson4.ipynb",
          "Matcher": "03_lesson4.ipynb",
-         "map_split": "03_lesson4.ipynb",
+         "map_group": "03_lesson4.ipynb",
          "SplitData": "03_lesson4.ipynb"}
 
 modules = ["lesson1.py",
